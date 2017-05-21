@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Timestamp Microservice</title>
+  
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+
+<body>
+    <div class="container">
+        <h1>URL Shortener Microservice</h1>
+        <hr/>
+        <ul>
+            <li><strong>User Story:</strong> I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+            <li><strong>User Story:</strong> If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+            <li><strong>User Story:</strong> When I visit that shortened URL, it will redirect me to my original link.</li>
+        </ul>
+        <hr/>
+        <h3>Example:</h3>
+        <code>https://url-shorten-thunghiem.herokuapp.com/https://www.freecodecamp.com</code>
+        <br/>
+        <code>https://timestamp-thunghiem.herokuapp.com/5678902</code>
+        <h3>Example Output:</h3>
+        <code>
+            {
+            __v: 0,
+            original_url: "https://www.freecodecamp.com",
+            short_url: "https://url-shorten-thunghiem.herokuapp.com/SJr4pmk-Z",
+            _id: "5921ad2d11c4960c3867c729"
+            }
+        </code>
+    </div>
+</body>
+</html>
