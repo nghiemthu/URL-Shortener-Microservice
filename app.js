@@ -50,7 +50,7 @@ app.get("/*", function(req, res){
                     res.send(urls[0]);
                 } else {
                     // Else we create new short url and add to the database
-                    var shortUrl = "https://api-project-freecodecamp-thunghiem.c9users.io/" + shortid.generate();
+                    var shortUrl = "https://shorten-url-thunghiem.herokuapp.com/" + shortid.generate();
                     
                     //Save to database
                     URL.create({
