@@ -22,7 +22,7 @@ app.get("/home", function(req, res){
 app.get("/:id", function(req, res){
     
     var id = req.params.id;
-    var shortUrl = "https://api-project-freecodecamp-thunghiem.c9users.io/" + id;
+    var shortUrl = "https://shorten-url-thunghiem.herokuapp.com/" + id;
     
     URL.find({short_url: shortUrl}, function(err, urls){
         if (err) throw err;
